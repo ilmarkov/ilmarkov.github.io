@@ -19,6 +19,6 @@ Keep your training scripts the same, only need to replace `torch.distributed` ba
 The only changes to the training script using pytorch distributed required
 are importing the built extension and specifying `cgx` as `torch.distributed.init_process_group` backend parameter and setting some environment variables.
 
-Applying CGX to distributed training on a single machine with 8xRTX3090 allows us to achiev 60% speedup compared to the Nvidia NCCL:
+Applying CGX to distributed training on a single machine with 8xRTX3090 allows us to achieve 60% speedup compared to the Nvidia NCCL:
 
 ![Transformer-XL base](/assets/img/TXL_comparison.png){:class="img-responsive"}
